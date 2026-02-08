@@ -1,0 +1,26 @@
+{
+	"name": "@jmplahitko/utils",
+	"version": "1.0.0",
+	"description": "@jmplahitko/utils",
+	"author": "Joseph Plahitko",
+	"homepage": "",
+	"license": "ISC",
+	"main": "dist/index.js",
+	"type": "module",
+	"types": "dist/index.d.ts",
+	"directories": {
+		"dist": "dist",
+		"test": "tests"
+	},
+	"files": [
+		"dist"
+	],
+	"dependencies": {
+		"detect-browser": "^5.2.1",
+		"path-to-regexp": "^6.2.1"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	}
+}
