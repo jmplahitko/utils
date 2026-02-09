@@ -5,10 +5,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build & Development
 
 ```bash
-npm run build      # Compiles TypeScript to dist/ via tsc
+npm run build        # Compiles TypeScript to dist/ via tsc
+npm test             # Run all tests (vitest run)
+npm run test:watch   # Run tests in watch mode (vitest)
+npx vitest run tests/array/head.test.ts   # Run a single test file
 ```
 
-Tests are not currently configured in this package (test script is a placeholder). No linter is configured.
+No linter is configured. Tests are organized under `tests/` mirroring the `src/` module structure.
 
 ## Architecture
 
