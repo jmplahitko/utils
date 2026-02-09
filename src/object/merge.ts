@@ -3,7 +3,7 @@ import isDate from '../predicate/isDate';
 import isObject from '../predicate/isObject';
 import throwError from '../_internal/throwError';
 
-export default function merge<T, U>(dest: T, src: U): T & U {
+export default function merge<T extends object, U extends object>(dest: T, src: U): T & U {
 	// merge() is non-destructive (does not change original objects)
 	if (!isObject(dest) || !isObject(src)) {
 		throwError('merge: Object required for first and second parameters');
